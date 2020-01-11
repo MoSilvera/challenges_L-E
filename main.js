@@ -60,30 +60,54 @@
 
 
 
-function songDecoder(song){
-  let songArray = song.split("WUB")
-  let indexArray = []
-    console.log(songArray)
-   songArray.forEach((element, index) => {
-      if (element.length === 0)
-      {
-        indexArray.push(index)
-      }
-  })
+// function songDecoder(song){
+//   let songArray = song.split("WUB")
+//   let indexArray = []
+//     console.log(songArray)
+//    songArray.forEach((element, index) => {
+//       if (element.length === 0)
+//       {
+//         indexArray.push(index)
+//       }
+//   })
 
-  for (var i = indexArray.length -1; i >= 0; i--) 
-  songArray.splice(indexArray[i], 1);
+//   for (var i = indexArray.length -1; i >= 0; i--) 
+//   songArray.splice(indexArray[i], 1);
 
-  let properlySpacedString = songArray.join(" ")
+//   let properlySpacedString = songArray.join(" ")
 
-  return properlySpacedString
+//   return properlySpacedString
 
-  }
+//   }
 
-  const slickSong = (song) => {
-      return song.split("WUB").filter(Boolean).join(' ')
-  }
-  console.log(songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB"),"compared to WE ARE THE CHAMPIONS MY FRIEND")
+//   const slickSong = (song) => {
+//       return song.split("WUB").filter(Boolean).join(' ')
+//   }
+//   console.log(songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB"),"compared to WE ARE THE CHAMPIONS MY FRIEND")
 //   console.log(songDecoder("AWUBBWUBC"))
-  console.log(slickSong("AWUBWUBWUBBWUBWUBWUBC"))
+//   console.log(slickSong("AWUBWUBWUBBWUBWUBWUBC"))
 //   console.log(songDecoder("WUBAWUBBWUBCWUB"))
+
+
+// function nbYear(p0, percent, aug, p) {
+
+//     let yearTracker = 0
+//     let totalPop = p0
+//     let mathPop = percent * .01
+
+//     while (totalPop < p){
+//         console.log("current year", yearTracker)
+//         console.log("total Population", totalPop)
+//         console.log("multiplyer", mathPop)
+//         console.log("added to pop", aug)
+//         yearTracker = yearTracker + 1
+//       let newPop = totalPop + (totalPop * mathPop) + aug
+//       totalPop = newPop
+
+//     }
+//      return yearTracker
+//   }
+
+//   console.log(nbYear(1500, 5, 100, 5000) )
+//     console.log(nbYear(1500000, 2.5, 10000, 2000000))
+//     console.log(nbYear(1500000, 0.25, 1000, 2000000))
