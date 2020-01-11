@@ -111,3 +111,9 @@
 //   console.log(nbYear(1500, 5, 100, 5000) )
 //     console.log(nbYear(1500000, 2.5, 10000, 2000000))
 //     console.log(nbYear(1500000, 0.25, 1000, 2000000))
+
+var isSquare = function(n){
+
+    return n >= 0 && Math.sqrt(n) % 1 === 0
+    
+  }
